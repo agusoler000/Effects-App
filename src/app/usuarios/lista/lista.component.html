@@ -1,0 +1,15 @@
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" class="card m-5" *ngFor="let user of usuarios">
+        <div>
+            <img [src]="user.avatar" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{ user.first_name }} {{ user.last_name }} </h5>
+                <p class="card-text">Aprendiendo RXJS.</p>
+                <p class="text-muted">
+                    <span class="text-muted">ID {{ user.id }}</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
